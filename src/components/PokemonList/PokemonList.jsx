@@ -3,8 +3,12 @@ import Pokemon from "../Pokemon/Pokemon";
 // Import CSS
 import './PokemonList.css'
 import usePokemonList from "../../hooks/usePokemonList";
+import { useEffect } from "react";
 
 function PokemonList(){ 
+    useEffect(()=>{
+        console.log("render");
+    })
 
     // TO MAKE THE STATE MORE READABLE WE HAVE CONVERTED THIS INTO A CALLBACK FN
     // const [pokemonList, setPokemonList] = useState([]);
